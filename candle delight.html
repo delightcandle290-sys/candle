@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noodles • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+
+ <!-- Candle Delight Pizza -->
+<header><h1>Candle Delight Pizza</h1></header>
+<div class="menu-grid">
+  <div class="dish"><img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/f9701b4e9e6aae4febe5e52c9f5e36f9" alt=""><div class="dish-title">Farm House</div><div class="price-row">Small:-₹159/- Medium:-₹299/- Large:-₹409/- Extra Large:-₹469/-</div></div>
+  <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfK8g7T7B9W-U70BegN6QRomufozxmraQJXQ&s" alt=""><div class="dish-title">Double Cheese Margherita</div><div class="price-row">Small:-₹169/- Medium:-₹299/- Large:-₹409/- Extra Large:-₹469/--</div></div>
+  <div class="dish"><img src="https://images.raasakarts.com/insecure/fit/1000/1000/ce/0/plain/https://rasakart-assets.s3.ap-south-1.amazonaws.com/3fa229/prods/xyWEBKJupXnmWlhx4E2BOSljuSPnt3JaShUbPcgY.jpg@webp" alt=""><div class="dish-title">Paneer Delight</div><div class="price-row">Small:-₹159/- Medium:-₹289/- Large:-₹409/- Extra Large:-₹469/-</div></div>
+  <div class="dish"><img src="https://www.acouplecooks.com/wp-content/uploads/2019/06/Mushroom-Pizza-with-Herbs-011.jpg" alt=""><div class="dish-title">Veg Mushroom</div><div class="price-row">Small:-₹179/- Medium:-₹309/- Large:-₹449/- Extra Large:-₹509/-</div></div>
+  <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPF9PURtx1nqYPp0sLV8dPUTaQUceT4n3byQ&s" alt=""><div class="dish-title">Candle Delight Special</div><div class="price-row">Small:-₹179/- Medium:-₹309/- Large:-₹449/- Extra Large:-₹509/-</div></div>
+ <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUSBY5SWIFI-pofr5vHT8_kxd1XimTHB52TA&s" alt=""><div class="dish-title">Paneer Tikka</div><div class="price-row">Small:-₹179/- Medium:-₹309/- Large:-₹449/- Extra Large:-₹509/-</div></div>
+ <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtiBUr56b95v649ewTJjZucDxHq7t-DT2dWA&s" alt=""><div class="dish-title">Tadka Paneer</div><div class="price-row">Small:-₹189/- Medium:-₹339/- Large:-₹489/- Extra Large:-₹549/-</div></div>
+
+</div>
+
+</div>
+</div>
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

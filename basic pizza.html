@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noodles • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+
+ <header><h1>Basic Pizza</h1></header>
+<div class="menu-grid">
+  <div class="dish"><img src="https://littlekitchen.in/wp-content/uploads/2024/05/onion-pizza.jpg" alt=""><div class="dish-title">Onion</div><div class="price-row">Small:-₹99/- Medium:-₹179/- Large:-₹269/- Extra Large:-₹329/-</div></div>
+  <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRALH-clU6fKJf4ZRMkbwYD8uK5m7dnHMzbow&s" alt=""><div class="dish-title">Corn</div><div class="price-row">Small:-₹99/- Medium:-₹179/- Large:-₹269/- Extra Large:-₹329/-</div></div>
+  <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvuFxrbPFt_-P0mTXF_nfyJjKWw_K8GdUYnQ&s" alt=""><div class="dish-title">Capsicum</div><div class="price-row">Small:-₹99/- Medium:-₹179/- Large:-₹269/- Extra Large:-₹329/-</div></div>
+  <div class="dish"><img src="https://amindfullmom.com/wp-content/uploads/2021/03/Recipe-Tomato-Basil-Pizza.jpg" alt=""><div class="dish-title">Tomato</div><div class="price-row">Small:-₹79/- Medium:-₹149/- Large:-₹239/- Extra Large:-₹299/-</div></div>
+  <div class="dish"><img src="https://cdn.dotpe.in/longtail/store-items/3521582/x9faU9LE.webp" alt=""><div class="dish-title">Onion+Corn</div><div class="price-row">Small:-₹119/- Medium:-₹219/- Large:-₹329/- Extra Large:-₹389/-</div></div>
+  <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTrGxOqtXSeHYg3dF4AhrSZPGBnKxmXKlseg&s" alt=""><div class="dish-title">Capsicum+Corn</div><div class="price-row">Small:-₹119/- Medium:-₹219/- Large:-₹329/- Extra Large:-₹389/-</div></div>
+  <div class="dish"><img src="https://assets.surlatable.com/m/2e95ae317db3665f/72_dpi_webp-slt_REC-283117_1356567_mushroom_pizza.jpg" alt=""><div class="dish-title">Mushroom+Red Peprica</div><div class="price-row">Small:-₹129/- Medium:-₹239/- Large:-₹349/- Extra Large:-₹409/-</div></div>
+  <div class="dish"><img src="https://cdn.urbanpiper.com/media/bizmedia/2024/03/23/DSC04415_1711183009.jpg" alt=""><div class="dish-title">Capsicum+Paneer</div><div class="price-row">Small:-₹129/- Medium:-₹239/- Large:-₹349/- Extra Large:-₹409/-</div></div>
+  <div class="dish"><img src="https://www.mrcoconut.in/img/products/04_12_2022_14_25_271_pm.jpg" alt=""><div class="dish-title">Mushroom+Paneer</div><div class="price-row">Small:-₹139/- Medium:-₹259/- Large:-₹389/- Extra Large:-₹449/-</div></div>
+  <div class="dish"><img src="https://external-preview.redd.it/4M91T18hjS-25DqHv0iwq2Uy7o4DaQqnB0krNkk2rg8.jpg?auto=webp&s=e90db4a23cbab90eba453d8a6dd452d25c349210" alt=""><div class="dish-title">Jalapeno+Black Olive</div><div class="price-row">Small:-₹139/- Medium:-₹259/- Large:-₹389/- Extra Large:-₹449/-</div></div>
+  <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtwc5ofUxzM2eLBt0WNos6kAJnkqo3RTJvlQ&s" alt=""><div class="dish-title">Cheesy Paneer</div><div class="price-row">Small:-₹139/- Medium:-₹259/- Large:-₹379/- Extra Large:-₹439/-</div></div>
+
+</div>
+
+</div>
+</div>
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noodles • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+
+ <!-- Candle Delight Pizza -->
+<!-- Classic Pizza -->
+<header><h1>Classic Pizza</h1></header>
+<div class="menu-grid">
+  <div class="dish"><img src="https://i0.wp.com/cookingitalians.com/wp-content/uploads/2024/11/Margherita-Pizza.jpg?fit=1344%2C768&ssl=1" alt=""><div class="dish-title">Margherita Pizza</div><div class="price-row">Small:-₹109/- Medium:-₹209/- Large:-₹309/- Extra Large:-₹369/-</div></div>
+  <div class="dish"><img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/shaheen-ali20170510144238021.jpeg" alt=""><div class="dish-title">Veg Pizza</div><div class="price-row">Small:-₹129/- Medium:-₹239/- Large:-₹349/- Extra Large:-₹409/-</div></div>
+  <div class="dish"><img src="https://cdn.dotpe.in/longtail/store-items/8604630/Sc51qinq.webp" alt=""><div class="dish-title">Garden Fresh</div><div class="price-row">Small:-₹129/- Medium:-₹239/- Large:-₹349/- Extra Large:-₹409/-</div></div>
+  <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn4tgMCoWQVYwsk4eudQb4X_eJdyIA0HrA6A&s" alt=""><div class="dish-title">Spicy Chilli Pizza</div><div class="price-row">Small:-₹209/- Medium:-₹309/- Large:-₹349/- Extra Large:-₹409/-</div></div>
+</div>
+
+
+</div>
+</div>
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
